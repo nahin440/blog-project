@@ -391,9 +391,7 @@ padding-bottom: 50px;
 }
 
 .blog-box:hover{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
     margin: 30px 15%;
     box-shadow:
     3px 3px 3px 2px #b6ff9e;
@@ -593,7 +591,10 @@ padding-bottom: 50px;
         margin: 30px 10px;
     }
 
-
+    .blog-title , .blog-desc{
+        margin: 10px 0px;
+        padding: 10px 0px;
+    }
 
 
 
