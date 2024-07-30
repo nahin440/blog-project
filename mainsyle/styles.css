@@ -85,7 +85,7 @@
 
 .banner{
 
-    background-color: #dfffd5d1;
+    
     
     display: flex;
     justify-content: space-between;
@@ -98,7 +98,7 @@
 
 .banner-content{
     margin-left: 40%;
-    background-color: #f6ffe8;
+    background-color: #f6fff4;
     padding: 20px;
     border-radius: 8px;
 }
@@ -148,8 +148,8 @@
 
 
 .latest{
-margin-top: 0px;
-background-color: #edfff2;
+margin-top: px;
+
 padding-top: 30px;
 margin-bottom: 0px;
 padding-bottom: 50px;
@@ -178,29 +178,56 @@ padding-bottom: 50px;
 }
 
 
+.latest-div{
+    
+    
+}
+
 .latest-image{
-    width: 240px;
-    height: 180px;
+    border-top: 1px;
     border-radius: 8px;
+    width: 350px;
+    height: 280px;
+    padding: 0px;
+    
 }
 
 .latest-a{
     text-decoration: none;
-    background-color:#cdffbc;
-    padding: 50px;
+    
     margin-bottom: 20px;
+    background-color:#e9ffe2;
+    padding: 0px;
     border-radius: 8px;
+    
     
 }
 
 .latest-title{
     text-align: left;
-    margin-top: 20px;
+    margin: 20px 10px;
     padding-bottom: 10px;
     font-size: ;
     color: black;
 
 }
+.latest-desc{
+    margin: 10px 10px;
+    color: #000000;
+}
+
+.latest-button{
+    background-color:#b6ff9e;
+    padding: 10px 20px;
+    border: 1px solid #93dd7a;
+    border-radius: 8px;
+    margin: 20px 10px;
+}
+
+
+
+
+
 
 
 
@@ -212,7 +239,7 @@ padding-bottom: 50px;
 .posts{
     display: flex;
     justify-content: center;
-    margin-bottom: 0px;
+    margin-bottom: 80px;
     background-color: #f0fff2;
     padding-top: 90px;
     padding-bottom: 50px;
@@ -324,6 +351,161 @@ padding-bottom: 50px;
 
 
 
+.blogs{
+    
+}
+
+
+.main-title{
+    font-size: 35px;
+    font-weight: 800;
+    margin-left: 15%;
+    border-bottom: 5px solid #b6ff9e;
+    margin-right: 50%;
+    margin-bottom: 40px;
+}
+.main-title:hover{
+    font-size: 35px;
+    font-weight: 800;
+    margin-left: 15%;
+    background-color: #b6ff9e;
+    padding: 5px 10px;
+    border-radius: 8px;
+    border-bottom: 5px solid #b6ff9e;
+    margin-right: 50%;
+    margin-bottom: 40px;
+}
+
+
+.blog-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 15%;
+    box-shadow:
+    1px 1px 1px 2px #e1ffe8;
+    
+    border-radius: 8px;
+    
+    
+}
+
+.blog-box:hover{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 15%;
+    box-shadow:
+    3px 3px 3px 2px #b6ff9e;
+    border-radius: 8px;
+    
+}
+
+.blog-content-div{
+    margin: 0px 15% 0px 0px;
+}
+
+
+.blog-image{
+    width: 350px;
+    height: 280px; 
+    border-radius: 8px;
+    margin: 0px;  
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.border{
+    
+}
+
+
+.footer{
+    
+    background-color: #5a5f58;
+    color: white;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.footer-title{
+    border-top: 2px solid white;
+    font-size: 35px;
+    font-weight: 700;
+    padding: 10px 0px;
+    padding-right: 35%;
+}
+
+.help-desc{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    
+}
+
+.footer-desc{
+    margin: 20px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.copyright{
+    background-color: #b6ff9e;
+    margin: 0px;
+    padding: 20px 0px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -339,6 +521,7 @@ padding-bottom: 50px;
 
 @media screen and (max-width : 576px) {
     
+    .blog-box,
     .navbar,
     .nav-menu-ul,
     .banner,
@@ -395,6 +578,24 @@ padding-bottom: 50px;
     .all-p-title:hover{
         margin-left: 15%;
     }
+
+    
+    .blog-image{
+        width: 80%;
+        height: auto;
+    }
+    .blog-image:hover{
+        width: 80%;
+        height: auto;
+        display: block;
+    }
+    .blog-content-div{
+        margin: 30px 10px;
+    }
+
+
+
+
 
 
 
