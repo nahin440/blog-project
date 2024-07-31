@@ -75,7 +75,7 @@ body{
 
 .banner-upper-image{
     width: 100%;
-    height: 500px;
+    height: auto;
     
 
   
@@ -132,9 +132,37 @@ body{
 
 .banner-content{
     margin-left: 40%;
-    background-color: #f6fff4;
+    
+    
     padding: 20px;
     border-radius: 8px;
+    backdrop-filter: blur(5px);
+    background: #2fff001d;
+    
+}
+
+
+
+.banner-trend-a{
+    margin-bottom: 80px;
+    color: black;
+    text-decoration: none;
+    
+}
+
+.banner-trend-a:hover{
+    margin-bottom: 80px;
+    color: black;
+    text-shadow: 1px 1px 1px #b6ff9e, 1px 1px 1px rgb(22, 49, 13);
+    text-decoration: underline;
+
+    
+}
+
+.banner-title:hover{
+    margin: 25px 0px;
+    text-shadow: 1px 1px 1px #b6ff9e, 1px 1px 1px rgb(22, 49, 13);
+
 }
 
 .banner-title{
@@ -146,27 +174,14 @@ body{
     margin: 10px 0px;
 }
 
-.banner-trend-a{
-    margin-bottom: 80px;
-    color: black;
-    
-}
-
-.banner-title:hover{
-    margin: 25px 0px;
-    box-shadow: 2px 4px 3px #b6ff9e, 2px 4px 3px rgb(22, 49, 13);
-}
-
 .banner-desc:hover{
-    box-shadow: 2px 4px 3px #b6ff9e, 2px 4px 3px rgb(22, 49, 13);
+    
+    text-shadow: 1px 1px 1px #b6ff9e, 1px 1px 1px rgb(22, 49, 13);
+    
     margin: 10px 0px;
 }
 
-.banner-trend-a:hover{
-    margin-bottom: 80px;
-    color: black;
-    box-shadow: 2px 4px 3px #b6ff9e, 2px 4px 3px rgb(22, 49, 13);
-}
+
 
 
 
@@ -387,6 +402,8 @@ padding-bottom: 50px;
 
 .blog{
     display: flex;
+    border: 1px solid rgb(255, 255, 255);
+    margin-bottom: -60px;
 }
 
 
@@ -417,7 +434,7 @@ padding-bottom: 50px;
     justify-content: space-between;
     align-items: center;
     width: 800px;
-    margin: 60px 10%;
+    margin: 60px 10% 0px 10%;
     box-shadow:
     1px 1px 1px 2px #e1ffe8;
     
@@ -430,6 +447,7 @@ padding-bottom: 50px;
 .blog-box:hover{
 
     width: 800px;
+
     margin: 60px 10%;
     box-shadow:
     3px 3px 3px 2px #b6ff9e;
@@ -463,7 +481,7 @@ padding-bottom: 50px;
 
 .blog-button{
     background-color:#b6ff9e;
-    padding: 10px 20px;
+    padding: 15px 40px;
     border: 1px solid #93dd7a;
     border-radius: 8px;
     margin: 15px 0px 5px 0px;
@@ -492,6 +510,29 @@ padding-bottom: 50px;
 
 
 
+
+.sponsors{
+    margin: 0px 15% 60px 15%;
+}
+
+
+.sponsor-title{
+    margin: 0px 7% 40px 0px;
+    font-size: 35px;
+    font-weight: 700;
+    border-bottom: 5px solid #b6ff9e;
+}
+
+.sponsors-images{
+    display: grid;
+    grid-template-columns: repeat(5,5fr);
+}
+
+.sponsor-image{
+    width: 60%;
+    filter: grayscale(100%) ;
+     
+}
 
 
 
@@ -648,6 +689,10 @@ padding-bottom: 50px;
     .banner-content{
         margin-left: 0%;
         margin-top: 60px;
+    }
+
+    .banner-image-div{
+        justify-content: center;
     }
     
     .feature-post-image{
