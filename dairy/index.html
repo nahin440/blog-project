@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bakery</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+
+        <nav class="navbar">
+            <div class="nav-title">
+                <a href="../index.html" class="nav-a">Grocery blog</a>
+            </div>
+            <div class="nav-menu">
+                <ul class="nav-menu-ul">
+                    
+                    <li class="nav-menu-li"><a href="" class="nav-menu-a">
+                        Trending
+                    </a></li>
+                    
+                    <li class="nav-menu-li"><a href="" class="nav-menu-a">
+                        community
+                    </a></li>
+                    
+                    <li class="nav-menu-li"><a href="" class="nav-menu-a">
+                        About
+                    </a></li>
+                    
+                    <li class="nav-menu-li"><a href="" class="nav-menu-a">
+                        Contact
+                    </a></li>
+                </ul>
+            </div>
+        </nav>
+
+
+    </header>
+
+    <main>
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript">
+        window.addEventListener('scroll',reveal);
+
+        function reveal(){
+            var reveals = document.querySelectorAll('.reveal');
+      
+        for(var i = 0; i < reveals.length; i++ )
+    {
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 150;
+
+        if(revealtop < windowheight - revealpoint) {
+            reveals[i].classList.add('active');
+        }
+
+        else{
+            reveals[i].classList.remove('active');
+        }
+
+    }
+}
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="border">
+
+        </div>
+
+        <section class="footer">
+            <h3 class="footer-title">If you need anything :</h3>
+            <div class="help-desc">
+                <div>
+                    <p class="footer-desc">Support</p>
+                <p class="footer-desc">Contact</p>
+                
+                </div>
+                <div>
+                    <p class="footer-desc">About</p>
+                <p class="footer-desc">Forum</p>
+                </div>
+            </div>
+            
+        </section>
+
+
+    <section class="copyright">
+        <p class="copy">
+            All right reserved @ sheikh Hasina and the govt
+        </p>
+    </section>
+
+
+    </footer>
+</body>
+</html>
