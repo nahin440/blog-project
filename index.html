@@ -72,7 +72,7 @@
     </header>
 
     <main>
-        <section class="latest">
+        <section class="latest reveal">
            <h3 class="latest-title-main">
             Latest
            </h3>
@@ -117,7 +117,7 @@
            </div>
         </section>
 
-        <section class="posts">
+        <section class="posts reveal">
 
             <div class="feature-post">
                 
@@ -135,7 +135,7 @@
                     <p class="feature-post-desc">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos, exercitationem repudiandae eaque, rem, impedit possimus id dolore enim d
                     </p>
-                    <a href="#">
+                    <a href="#" class="feauore-button-a">
                         <button class="feature-post-button">
                         Read More
                         </button>
@@ -189,18 +189,18 @@
             
         </section>
 
-        <section class="blog /">
+        <section class="blog ">
 
         <div class="bolgs">
 
 
-            <div class="blog-main-title">
+            <div class="blog-main-title reveal">
                 <h3 class="main-title">
                     You will find everything  here :
                 </h3>
             </div>
 
-            <div class="blog-box">
+            <div class="blog-box reveal">
                 <div class="blog-image-div">
                     <img src="./image/demo .jpg" alt="" class="blog-image">
                 </div>
@@ -307,7 +307,7 @@
 
         </section>
 
-        <section class="sponsors">
+        <section class="sponsors reveal">
             <div class="sponsors-title">
                 <h3 class="sponsor-title">
                     Our sponsors :
@@ -336,6 +336,50 @@
 
 
     </main>
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript">
+        window.addEventListener('scroll',reveal);
+
+        function reveal(){
+            var reveals = document.querySelectorAll('.reveal');
+      
+        for(var i = 0; i < reveals.length; i++ )
+    {
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 150;
+
+        if(revealtop < windowheight - revealpoint) {
+            reveals[i].classList.add('active');
+        }
+
+        else{
+            reveals[i].classList.remove('active');
+        }
+
+    }
+}
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
 
 
 

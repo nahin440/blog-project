@@ -27,6 +27,54 @@ body{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition:  2s ease;
+}
+
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -216,6 +264,7 @@ padding-bottom: 50px;
     padding-top: 10px;
     border-radius: 8px;
     
+    
 }
 
 
@@ -224,6 +273,17 @@ padding-bottom: 50px;
     margin-left: 10% ;
     margin-bottom: 20px;
     border-left: 10px solid #b6ff9e;
+}
+.latest-title-main:hover{
+    transform: translateY(-20px);
+    transition: 1s;
+
+    font-size: 45px;
+    margin-left: 10% ;
+    margin-bottom: 20px;
+    background-color: #b6ff9e;
+    margin-right: 75%;
+    border-radius: 8px;
 }
 
 
@@ -242,6 +302,19 @@ padding-bottom: 50px;
 }
 
 .latest-a{
+    text-decoration: none;
+    
+    margin-bottom: 20px;
+    background-color:#e9ffe2;
+    padding: 0px;
+    border-radius: 8px;
+    
+    
+}
+.latest-a:hover{
+    transform: translateY(-20px);
+    transition: 1s;
+
     text-decoration: none;
     
     margin-bottom: 20px;
@@ -307,16 +380,19 @@ padding-bottom: 50px;
 
 .f-main-title{
     border-bottom:  5px solid #b6ff9e ;
-    margin: 0px 700px 20px 10px;
+    margin: 0px 400px 20px 10px;
 
 }
 .f-main-title:hover{
     border:  5px solid #b6ff9e;
     background-color: #b6ff9e;
     border-radius: 8px;
-    margin: 10px 740px 20px 10px;
+    margin: 10px 700px 20px 10px;
     box-shadow:
     1px 1px 1px #000000   ;
+
+    transform: translateY(-20px);
+    transition: 1s;
     
 
 
@@ -336,6 +412,21 @@ padding-bottom: 50px;
     border: 1px solid #93dd7a;
     border-radius: 8px;
 }
+.feature-post-button:hover{
+    background-color:#b6ff9e;
+    padding: 10px 20px;
+    border: 1px solid #93dd7a;
+    border-radius: 8px;
+    transform: translateY(-10px);
+    transition: .4s;
+
+    
+}
+
+.feature-button-a:hover{
+    
+
+}
 
 
 
@@ -351,6 +442,7 @@ padding-bottom: 50px;
     background-color: #e1ffeb;
     padding: 20px 10px;
     border-radius: 8px;
+    
 
 }
 .post-content:hover{
@@ -361,7 +453,8 @@ padding-bottom: 50px;
     border-radius: 8px;
     background-color: #b6ff9e;
     box-shadow:
-    1px 1px 1px #000000   ;
+    1px 1px 1px #000000   ;transform: translateY(-20px);
+    transition: 1s;
 
 }
 
@@ -373,7 +466,7 @@ padding-bottom: 50px;
 
 .all-p-title{
     border-bottom:  5px solid #b6ff9e ;
-    margin: 0px 250px 20px 10px;
+    margin: 0px 50px 20px 10px;
 
 }
 
@@ -381,9 +474,11 @@ padding-bottom: 50px;
     border:  5px solid #b6ff9e;
     background-color: #b6ff9e;
     border-radius: 8px;
-    margin: 10px 280px 20px 10px;
+    margin: 10px 250px 20px 10px;
     box-shadow:
     1px 1px 1px #000000   ;
+    transform: translateY(-20px);
+    transition: 1s;
 
 }
 
@@ -426,6 +521,8 @@ padding-bottom: 50px;
     border-bottom: 5px solid #b6ff9e;
     margin-right: 16%;
     margin-bottom: 40px;
+    transform: translateY(-20px);
+    transition: 1s;
 }
 
 
@@ -440,6 +537,10 @@ padding-bottom: 50px;
     
     border-radius: 8px;
     
+    transform: translateY(-30px);
+    transition: 3s;
+    
+    
     
     
 }
@@ -452,7 +553,7 @@ padding-bottom: 50px;
     box-shadow:
     3px 3px 3px 2px #b6ff9e;
     border-radius: 8px;
-    
+   
 }
 
 .blog-content-div{
@@ -513,6 +614,15 @@ padding-bottom: 50px;
 
 .sponsors{
     margin: 0px 15% 60px 15%;
+}
+
+.sponsors:hover{
+    transform: translateY(-30px);
+    transition: 2s;
+    box-shadow: 2px 1px 3px 4px rgb(188, 255, 193);
+    border-radius: 8px;
+    padding: 10px;
+
 }
 
 
@@ -761,6 +871,10 @@ padding-bottom: 50px;
     }
 
 
+    .sponsors{
+        margin-top: 100px;
+    }
+
 
 
 
@@ -774,5 +888,47 @@ padding-bottom: 50px;
     {
         grid-template-columns: repeat(1,1fr);
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .reveal{
+        position: relative;
+        transform: translateY(200px);
+        opacity: 0;
+        transition:  1s ease;
+    }
+    
+    .reveal.active{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+
+
+
+
 
 }
