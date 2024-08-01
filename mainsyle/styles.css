@@ -159,7 +159,7 @@ body{
 }
 .banner-image:hover{
     width: 360px;
-    height: 240px;
+    height: 220px;
     justify-content: center;
     border-radius: 8px;
     gap: 0px;
@@ -503,7 +503,7 @@ padding-bottom: 50px;
 .blog{
     display: flex;
     border: 1px solid rgb(255, 255, 255);
-    margin-bottom: 60px;
+    margin-bottom: 80px;
 }
 
 
@@ -526,7 +526,7 @@ padding-bottom: 50px;
     border-bottom: 5px solid #b6ff9e;
     margin-right: 16%;
     margin-bottom: 40px;
-    transform: translateY(-20px);
+    transform: translateY(-10px);
     transition: 1s;
 }
 
@@ -595,7 +595,7 @@ padding-bottom: 50px;
 
 .ad{
     margin: 10px 0% 160px 10% ;
-    padding: 0px 8% 200px 7% ;
+    padding: 0px 8% 450px 7% ;
     box-shadow: 2px 3px 2px 4px rgb(209, 209, 209);
     background-color: hsl(106, 100%, 95%);
     border-radius: 8px;
@@ -621,7 +621,7 @@ padding-bottom: 50px;
 }
 
 .sponsors:hover{
-    transform: translateY(-30px);
+    transform: translateY(-10px);
     transition: .6s;
     box-shadow: 2px 1px 3px 4px rgb(188, 255, 193);
     border-radius: 8px;
@@ -774,6 +774,11 @@ padding-bottom: 50px;
 
 
 @media screen and (max-width : 576px) {
+
+
+    /* *{
+        border: 2px solid red;
+    } */
     
     .blog-box,
     .navbar,
@@ -796,7 +801,7 @@ padding-bottom: 50px;
     }
 
     .nav-menu-ul{
-        margin: 10px 0px 0px 60px;
+        margin: 10px 0px 0px 0%;
         padding-bottom: 20px;
     }
     .nav-menu-li{
@@ -804,17 +809,36 @@ padding-bottom: 50px;
     }
 
     .banner{
-        padding-left:10% ;
+        justify-content: center;
+        margin-left: 3%;
     }
     .banner-content{
-        margin-left: 0%;
-        margin-top: 60px;
+        
+        margin: 40px 0px 0px 0px;
     }
 
     .banner-image-div{
-        margin: 0px 5%;
+        margin: 0px ;
+        justify-content: center;
+        margin-left: 3%;
+
+    }
+    .banner-image{
+        width: 100%;
+        height: auto;
+        margin: 0px 0px 0px 0px;
+        padding: 0px 0px 0px 0%;
+
     }
     
+    .posts{
+        width: 95%;
+        margin: 10px;
+        padding: 0px;
+        
+    }
+
+
     .feature-post-image{
         width: 95%;
     }
